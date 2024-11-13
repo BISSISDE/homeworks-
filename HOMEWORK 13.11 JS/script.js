@@ -58,7 +58,7 @@ do {
         num7 *= start;
         barma7 = true;
     }
-    i++;
+    start++;
 } while (start <= end);
 
 if (barma4) {
