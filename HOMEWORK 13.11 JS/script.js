@@ -43,7 +43,6 @@ console.log(enter);
 
 let start = parseInt(prompt("Бірінші сан енгіз:"));
 let end = parseInt(prompt("Екінші ссан енгіз:"));
-let i = start;
 
 var num4 = 1;
 var num7 = 1;
@@ -51,16 +50,16 @@ var barma4;
 var barma7;
 
 do {
-    if (i % 4 == 0) {
-        num4 *= i;
+    if (start % 4 == 0) {
+        num4 *= start;
         barma4 = true;
     }
-    if (i % 7 == 0) {
-        num7 *= i;
+    if (start % 7 == 0) {
+        num7 *= start;
         barma7 = true;
     }
     i++;
-} while (i <= end);
+} while (start <= end);
 
 if (barma4) {
     console.log("4-ке қалдықсыз бөлінетін сандар көбейтіндісі:" + num4);
