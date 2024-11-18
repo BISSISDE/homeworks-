@@ -50,6 +50,7 @@ var barma4;
 var barma7;
 
 do {
+<<<<<<< HEAD
   if (start % 4 == 0) {
     num4 *= start;
     barma4 = true;
@@ -59,6 +60,17 @@ do {
     barma7 = true;
   }
   start++;
+=======
+    if (start % 4 == 0) {
+        num4 *= start;
+        barma4 = true;
+    }
+    if (start % 7 == 0) {
+        num7 *= start;
+        barma7 = true;
+    }
+    start++;
+>>>>>>> 0b705a31f3ebb08d9b9c395b777b726e3306755b
 } while (start <= end);
 
 if (barma4) {
