@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма оқиғалары</h1>
+    <label for="name">Аты-жөні:</label>
+    <input type="text" id="nameYour" placeholder="Enter name">
+    <p id="type">Сіз енгізіп жатырсыз: <span id="typing"></span></p>
+    <button id="Button">Жіберу</button>
+    <p id="endtype" style="display: none;">Сіз енгіздіңіз: <span id="endtype-text"></span></p>
+
+<script>
+    const nameYour = document.getElementById("nameYour");
+    const typing = document.getElementById("typing");
+    const endtype = document.getElementById("endtype");
+    const endtypeText = document.getElementById("endtype-text");
+    const Button = document.getElementById("Button");
+    const type = document.getElementById("type");
+
+    nameYour.addEventListener("input", () => {
+      typing.textContent = nameYour.value;
+    });
+
+    Button.addEventListener('click', () => {
+      endtypeText.textContent = nameYour.value;
+      type.style.display = 'none';
+      endtype.style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
