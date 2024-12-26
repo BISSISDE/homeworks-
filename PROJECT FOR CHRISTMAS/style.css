@@ -1,0 +1,773 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Fugaz+One&family=Gabriela&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rubik+Mono+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Merienda:wght@300..900&family=Rubik+Mono+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Lilita+One&family=Merienda:wght@300..900&family=Rubik+Mono+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  overflow-x: hidden;
+}
+
+#header {
+  background: url(/img/new\ year\ aydary.jpg) no-repeat center center/cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  transition: all 1.3s;
+  margin-top: -120px;
+}
+#envelope {
+  background: url("https://thumbs.dreamstime.com/b/rustic-table-adorned-golden-jingle-bells-red-ribbons-pine-cones-creating-festive-christmas-new-year-background-banner-337644974.jpg")
+    no-repeat center center/cover;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  width: 100%;
+  transition: 1s all;
+  height: 80px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  position: relative;
+}
+.logoimg {
+  border-radius: 20px;
+}
+#hat {
+  position: absolute;
+  top: -12px;
+  right: -125px;
+  rotate: 25deg;
+  width: 25px;
+  height: 25px;
+}
+.nav-menu {
+  margin-left: 150px;
+}
+.nav-menu a {
+  background: linear-gradient(to bottom, #ffffff 0%, #640b0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lilita One", serif;
+  font-weight: 1000;
+  margin: 0 15px;
+  font-size: 1.1em;
+  cursor: not-allowed;
+}
+
+.nav-menu a:hover {
+  font-size: 1.3em;
+  transition: all 1s;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+.icons button {
+  background: none;
+  border: none;
+}
+#Exchange {
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 20px;
+  background-color: #640b0b;
+  color: white;
+  border: 2px white dashed;
+}
+.Exchange-2 {
+  background: #000000;
+  color: white;
+}
+#content h1 {
+  font-size: 4em;
+  margin-top: 100px;
+  text-shadow: 2px 2px 20px #000000;
+  color: rgb(174, 114, 114);
+  font-family: "Fugaz One", serif;
+  padding-top: 300px;
+}
+#content h1:focus {
+  color: rgb(174, 114, 114);
+}
+
+#content p {
+  font-size: 2.2em;
+  margin: 40px 0;
+  text-shadow: 2px 2px 8px #000000;
+  color: rgb(144, 61, 61);
+  font-family: "Fugaz One", serif;
+}
+
+.graphics {
+  margin-top: 50px;
+}
+
+.textHY,
+.gift {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.gifts {
+  font-size: 3em;
+  margin-top: 20px;
+}
+.logo h3 {
+  font-weight: bold;
+  font-family: "Lilita One", serif;
+  color: rgb(113, 48, 48);
+}
+
+#arrowUp {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 10%;
+  font-size: 40px;
+  position: fixed;
+  top: 600px;
+  left: 10px;
+  display: none;
+  width: fit-content;
+  z-index: 100;
+}
+#arrowUp2 {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 10%;
+  font-size: 40px;
+  position: fixed;
+  top: 645px;
+  left: 10px;
+  display: none;
+  width: fit-content;
+  z-index: 100;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Cards {
+  border: 1px rgb(195, 194, 194) dashed;
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+}
+.CardImg {
+  width: fit-content;
+  height: 200px;
+  border-radius: 30px;
+}
+.allcard {
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+#NewArrivals {
+  margin-left: 200px;
+  margin-right: 200px;
+  font-family: "Merienda", serif;
+}
+.CardName {
+  margin-top: 35px;
+}
+.snowFlake {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 50px;
+}
+#NewArrivals h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+}
+#NewArrivals nav {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#NewArrivals nav button {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+  font-weight: 600;
+  border-radius: 60px;
+  padding: 15px 40px;
+  font-family: "Merienda", serif;
+}
+.NewArrivalsButton {
+  background-color: #d06e6e;
+  color: #ffffff;
+  border: 2px rgb(84, 122, 79) dashed;
+}
+#NewArrivals nav button:hover {
+  background-color: #d06e6e;
+  color: #ffffff;
+  border: 2px rgb(84, 122, 79) dashed;
+  transition: 1s all;
+}
+.card-1 img {
+  width: 360px;
+  height: 450px;
+}
+.card-1 {
+  position: relative;
+  display: inline-block;
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+.card-1 h3 {
+  position: absolute;
+  bottom: 30px;
+  border-radius: 10px;
+  padding: 25px 45px;
+  background-color: #ffffff;
+  font-size: small;
+  width: 90%;
+  text-align: center;
+}
+.cardsImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#letter img {
+  width: 1000px;
+  border-radius: 20px;
+  height: 600px;
+}
+#letter {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#letter h1 {
+  display: flex;
+  position: absolute;
+  bottom: 400px;
+  font-size: 3em;
+  color: white;
+  font-family: "Kaushan Script", serif;
+  margin-left: 370px;
+}
+#letter h2 {
+  display: flex;
+  position: absolute;
+  bottom: 300px;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  font-family: "Kaushan Script", serif;
+  margin-left: 170px;
+}
+#letter button {
+  display: flex;
+  position: absolute;
+  bottom: 70px;
+  font-size: 2em;
+  padding: 20px;
+  border-radius: 40px;
+  font-family: "Kaushan Script", serif;
+  background-color: rgb(255, 255, 255);
+  border: 1px black dashed;
+  margin-left: 350px;
+}
+#letter button:hover {
+  scale: 1.05;
+  transition: all 1s;
+  background-color: rgb(165, 68, 68);
+}
+.paper img {
+  position: absolute;
+  top: 0px;
+  width: 1300px;
+  height: 600px;
+}
+.paper #paperText {
+  font-size: xx-small;
+  position: absolute;
+  top: 730px;
+  width: 800px;
+}
+.paper #paperText h2 {
+  color: #ffffff;
+}
+.paper {
+  position: absolute;
+  top: 0px;
+  width: 800px;
+  left: 260px;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffd154;
+  margin-top: 70px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h2 {
+  margin-top: 0;
+  color: #dcb588;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.info p {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#profile {
+  margin-top: 90px;
+  background: url("https://img.goodfon.ru/wallpaper/nbig/7/d3/tatiana-fedenkova-novyi-god-rozhdestvo-elovye-vetki-shary--1.webp")
+    no-repeat center center/cover;
+  /* box-shadow: inset -10px -10px 150px 100px black; */
+  height: 575px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Dancing Script", serif;
+    border: none;
+}
+#grafTree {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 250px;
+}
+
+.container {
+  height: fit-content;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-family: "Merienda", serif;
+}
+.blog-post {
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 400px;
+  display: grid;
+  gap: 10px;
+}
+.blog-post h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.blog-post p {
+  font-size: small;
+}
+.blog-post button {
+  color: #000000;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px rgb(177, 177, 177) dashed;
+  padding: 10px 30px;
+  width: fit-content;
+  font-size: x-small;
+    font-family: "Merienda", serif;
+    font-weight: 900;
+}
+.blog-post button:hover {
+  background-color: rgb(219, 219, 219);
+  border: 1px dashed black;
+  scale: 0.95;
+  transition: all 1s;
+}
+.blog-post img {
+  width: 400px;
+}
+#LarestBlog h1 {
+  text-align: center;
+}
+.sale {
+  margin-left: 50px;
+}
+#content {
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+    border: none;
+}
+.carousel-item {
+  flex: 0 0 100%;
+  opacity: 0;
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 500;
+  color: white;
+  font-size: 20px;
+  width: 700px;
+  text-align: center;
+  border: none;
+}
+.carousel-item.active {
+  opacity: 1;
+  position: relative;
+    border: none;
+}
+#form {
+  height: fit-content;
+  margin-left: 100px;
+  position: relative;
+}
+.formText {
+  padding-top: 150px;
+  display: grid;
+  gap: 20px;
+  font-family: "Lilita One", serif;
+  font-size: 1.3em;
+}
+.formText img {
+  width: 50px;
+  height: 50px;
+}
+.formText h1 {
+  width: 550px;
+}
+.formImages {
+}
+.newsletter {
+  position: absolute;
+  top: 120px;
+  right: 220px;
+  height: 450px;
+  width: 300px;
+}
+.santa {
+  position: absolute;
+  top: 100px;
+  right: 420px;
+  width: 320px;
+  height: 450px;
+  z-index: -100;
+}
+.grinch {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -10;
+  width: 220px;
+}
+#grafTree2 {
+  position: absolute;
+  bottom: 0px;
+  right: 220px;
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
+}
+#signinForm {
+  margin-top: 40px;
+  position: relative;
+  height: 270px;
+}
+#signinForm input {
+  padding: 15px;
+  width: 600px;
+  font-size: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 0px 3px rgb(252, 192, 89);
+  border: 0px;
+  font-family: "Lilita One", serif;
+}
+#signinForm button {
+  padding: 15px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 0px 30px 30px 0px;
+  position: absolute;
+  right: 820px;
+  top: -0px;
+  border: 0px;
+  background-color: rgb(192, 11, 11);
+  font-family: "Lilita One", serif;
+  color: #ffffff;
+}
+#signinForm button:hover {
+  color: #000000;
+  transition: all 1s;
+}
+#footerIn {
+  margin-top: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: rgb(165, 165, 165);
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+}
+
+footer {
+  background: #640b0b;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.logo {
+  width: 17px;
+  height: 17px;
+}
+footer nav a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+footer nav a:hover {
+  text-decoration: underline;
+  color: #c5c5c5;
+}
+.iconsSites {
+  margin-top: 50px;
+  display: inline-block;
+  border-radius: 0%;
+  border: #000 solid 2px;
+  object-fit: cover;
+  padding: 10px;
+  cursor: help;
+}
+.iconsSites img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+#footerIn h1 {
+  margin-bottom: 40px;
+}
+.imgFooter {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+}
+#logotext2 {
+  color: rgb(94, 100, 76);
+}
+
+#snow {
+  overflow: hidden;
+}
+
+.svg1 {
+  fill: white;
+}
+
+.svg1-dark {
+  fill: #ffffff;
+}
+
+.search-1 {
+  width: 0;
+  border: transparent;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.search-2 {
+  width: 250px;
+  border: 3px dashed rgb(84, 21, 21);
+  background: rgb(216, 215, 215);
+  padding: 5px;
+}
+#search {
+  cursor: pointer;
+}
+.timerText img {
+  width: 100px;
+  height: 100px;
+  margin-left: 720px;
+}
+.timerText {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+}
+.timerText h1 {
+  width: 100%;
+  font-size: 2.5em;
+  margin-left: 390px;
+  margin-right: 600px;
+}
+.timerText h2 {
+  width: 300px;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: 620px;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.ArtTimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 600px;
+  margin-top: -50px;
+  font-family: "Merienda", serif;
+  position: relative;
+}
+.timer .timer__item {
+  font-size: 3em;
+  color: #640b0b;
+}
+.timer .separator {
+  font-size: 3em;
+    color: #490e0e;
+}
+.TimerImg {
+  width: 100%;
+}
+
+.santa1 {
+  width: 300px;
+  height: fit-content;
+  position: absolute;
+  right: 40px;
+  top: 0;
+}
+.DHMS{
+  display: grid;
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.grinch1 {
+  width: 200px;
+  height: fit-content;
+  position: absolute;
+  bottom: 100px;
+  right: 200px;
+}
+.santa2 {
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  bottom: 50px;
+  left: 150px;
+}
+.grinch2 {
+  width: 400px;
+  position: absolute;
+  top: 40px;
+  left: -40px;
+}
+
+      @media (max-width: 600px) {
+        .nav-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .nav-menu {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+          flex-wrap: wrap;
+        }
+
+        .nav-menu a {
+          padding: 10px;
+          width: 100%;
+          font-size: 2em;
+          margin-left: 0px;
+
+        }
+
+        #header h1 {
+          visibility: hidden;
+        }
+        #header p{
+          visibility: hidden;
+        }
+        #header button , input , a{
+          align-items: center;
+        }
+        .cardsImage {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .card-1 {
+          margin-bottom: 20px;
+        }
+      }
+      
