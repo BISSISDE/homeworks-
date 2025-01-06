@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(219, 216, 212);
+}
+h1{
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 900;
+      font-family: "Lilita One", serif;
+
+    color: black;
+}
+.alldiv{
+    justify-self: center;
+    margin-top: 20px;
+    background-color: black;
+    width: 400px;
+    height: 550px;
+    border-radius: 30px;
+}
+.text{
+    height: 120px;
+}
+.lightimg{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 540px;
+    top: 110px;
+}
+.buttondiv button{
+    background-color:rgba(92, 92, 92, 0.322);
+    padding: 12px;
+    border-radius: 10%;
+    border: none;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+.buttondiv {
+    padding: 20px;
+    background-color: rgb(56, 56, 56);
+    height: 450px;
+    border-radius: 0px 0px 30px 30px;
+}
+.zero{
+    width: 170px !important;
+}
+.orrange {
+    background-color: rgb(255, 166, 0) !important;
+}
+.green{
+    background-color: green !important;
+}
+.gray{
+    background-color: gray !important;
+}
+.gray:hover{
+    background-color: rgba(128, 128, 128, 0.742) !important;
+    border: 2px black ridge !important;
+}
+.green:hover{
+    background-color: rgba(0, 128, 0, 0.562) !important;
+    border: 2px black ridge ;
+}
+.orrange:hover{
+    background-color: rgba(255, 166, 0, 0.792) !important;
+    border:  2px black ridge;
+}
+.buttondiv button:hover{
+    background-color:rgba(92, 92, 92, 0.671) ;
+    border:  2px rgb(0, 0, 0) ridge ;
+}
