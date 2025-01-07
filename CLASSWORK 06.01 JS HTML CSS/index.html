@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Calculator</h1>
-    <img class="lightimg" src="mathematics-symbol.png" alt="">
+    <img class="lightimg" src="mathematics-symbol.png" alt="" />
     <div class="alldiv">
-        <div class="text">
-            
+      <div class="text">
+        <input class="text input" type="text" />
+      </div>
+      <div class="buttondiv">
+        <div>
+          <button data-value="C" class="gray">C</button>
+          <button data-value="+/-" class="gray">+/-</button>
+          <button data-value="DEL" class="gray">DEL</button>
+          <button data-value="/" class="orrange">/</button>
         </div>
-        <div class="buttondiv">
-            <div>
-                <button class="gray">C</button>
-                <button class="gray">+/-</button>
-                <button class="gray">%</button>
-                <button class="orrange">/</button>
-            </div>
-           <div>
-                 <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="orrange">x</button>
-           </div>
-            <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="orrange">-</button>
-            </div>
-            <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="orrange">+</button>
-            </div>
-            <div>
-                <button class="zero">0</button>
-                <button>.</button>
-                <button class="green
-                ">=</button>
-            </div>
+        <div>
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button data-value="*" class="orrange">x</button>
         </div>
+        <div>
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-value="-" class="orrange">-</button>
+        </div>
+        <div>
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-value="+" class="orrange">+</button>
+        </div>
+        <div>
+          <button data-value="0" class="zero">0</button>
+          <button data-value=".">.</button>
+          <button data-value="=" class="green">=</button>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
