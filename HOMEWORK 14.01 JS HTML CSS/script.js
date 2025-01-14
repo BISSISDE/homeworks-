@@ -18,5 +18,5 @@ fetch("https://jsonplaceholder.typicode.com/users")
   })
   .catch((error) => {
     console.error("A mistake happened!", error);
-    document.body.innerHTML = "<h1>Постты жүктеу сәтсіз болды.</h1>";
+    document.body.innerHTML = "<h1>A mistake happened!</h1>";
   });
