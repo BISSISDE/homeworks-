@@ -1,22 +1,19 @@
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
   .then((data) => {
-    let MassiveForAll = "";
     data.forEach((element) => {
       const TextName = element.name;
       const TextEmail = element.email;
 
-      MassiveForAll += `
+      document.body.innerHTML = `
             <div class='container'>
                 <h2>Name: ${TextName}</h2>
                 <h3>Email: ${TextEmail}</h3>
             </div>
             `;
     });
-
-    document.body.innerHTML = MassiveForAll;
   })
   .catch((error) => {
-    console.error("A mistake happened!", error);
-    document.body.innerHTML = "<h1>A mistake happened!</h1>";
+    console.error("Error", error);
+    document.body.innerHTML = "<h1>Error</h1>";
   });
