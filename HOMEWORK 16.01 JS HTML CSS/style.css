@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oleo+Script:wght@400;700&display=swap");
+
+#weatherContainer {
+  align-items: center;
+  text-align: center;
+}
+#weatherContainer h3,
+#weatherContainer p {
+  font-weight: 900;
+  font-size: 20px;
+}
+#weatherContainer h3 {
+  color: brown;
+}
+.allTags {
+  align-items: center;
+  text-align: center;
+}
+.allTags input,
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: black solid 2px;
+}
+.allTags label {
+  font-size: 25px;
+  font-weight: 900;
+}
+.allTags h1 {
+  font-size: 42px;
+  font-family: "Lilita One", serif !important;
+  color: black;
+}
+body {
+  font-family: "Oleo Script", serif;
+  height: 60vh;
+  align-content: center;
+  color: rgb(49, 49, 49);
+  background-color: aliceblue;
+}
