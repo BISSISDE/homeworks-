@@ -2,7 +2,7 @@
 
 body {
   height: 98vh;
-  background: linear-gradient(135deg, #d7d7d7, #b87373, #500606);
+  background: url(https://images6.alphacoders.com/132/1322314.jpeg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
