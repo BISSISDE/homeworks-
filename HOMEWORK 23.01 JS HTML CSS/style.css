@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Oleo+Script:wght@400;700&family=Orelega+One&family=Permanent+Marker&display=swap");
+body {
+  background-color: slategrey;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  font-family: "Lilita One", serif;
+}
+.SearchPlace {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+input {
+  width: 300px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: lightsteelblue;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Oleo Script", serif;
+}
+button {
+  width: 100px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: lightslategray;
+  color: white;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  font-family: "Oleo Script", serif;
+}
+#Info {
+  margin-top: 50px;
+  border: 5px double black;
+  width: fit-content;
+  padding: 20px;
+  background-color: lightsteelblue;
+  margin-left: 30px;
+}
+img {
+  width: 190px;
+  border: solid 1px black;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#NameTextContent,
+#GenreTextContent {
+  font-family: "Orelega One", serif;
+  font-size: 30px;
+}
