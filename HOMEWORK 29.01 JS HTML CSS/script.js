@@ -26,3 +26,4 @@ function SavedColor() {
   }
 }
 window.onload = SavedColor;
+colorInput.addEventListener("input", SetItem);
