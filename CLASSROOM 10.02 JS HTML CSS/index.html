@@ -42,9 +42,10 @@
             class="InputSearch"
             type="text"
             placeholder="Enter order meal"
+            onkeyup="filterMeals()"
           />
           <button>
-            <img
+            <img 
               class="BtnSearch"
               src="https://www.svgrepo.com/show/340875/query.svg"
               alt=""
@@ -95,6 +96,9 @@
             <p class="calories">Calories: <span>307 kcal</span></p>
             <p class="deliveryTime">Delivery Time: <span>20 minutes</span></p>
           </div>
+          <div id="meals-container"></div>
+          <div id="no-results" style="display: none;">Нәтижелер табылмады.</div>
+
         </div>
       </div>
     </main>

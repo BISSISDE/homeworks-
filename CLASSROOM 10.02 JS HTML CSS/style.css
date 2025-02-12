@@ -108,6 +108,7 @@ header{
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .card {
     background-color: #fff;
@@ -118,7 +119,6 @@ header{
     text-align: center;
     font-size: 18px;
 }
-
 .foodImg {
     width: 300px;
     height: 300px;
